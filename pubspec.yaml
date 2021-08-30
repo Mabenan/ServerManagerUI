@@ -1,4 +1,4 @@
-name: servermanagerui
+name: servermanager
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -31,6 +31,7 @@ dependencies:
   parse_server_sdk_flutter: ^3.1.0
   rxdart: ^0.27.1
   charts_flutter: ^0.11.0
+  path_provider: ^2.0.2
 
 dev_dependencies:
   flutter_test:

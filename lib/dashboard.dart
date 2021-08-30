@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:servermanagerui/frame.dart';
+import 'package:servermanager/frame.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
 class Dashboard extends StatefulWidget {

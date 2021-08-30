@@ -1,6 +1,6 @@
 {
-    "name": "servermanagerui",
-    "short_name": "servermanagerui",
+    "name": "servermanager",
+    "short_name": "servermanager",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

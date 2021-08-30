@@ -5,8 +5,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
-import 'package:servermanagerui/api_servers.dart';
-import 'package:servermanagerui/globals.dart';
+import 'package:servermanager/api_servers.dart';
+import 'package:servermanager/globals.dart';
 
 class ServerChooser extends StatefulWidget {
   ServerChooser({Key? key}) : super(key: key);

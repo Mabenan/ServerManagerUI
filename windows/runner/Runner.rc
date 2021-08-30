@@ -92,10 +92,10 @@ BEGIN
             VALUE "CompanyName", "de.mabenan" "\0"
             VALUE "FileDescription", "A new Flutter project." "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "servermanagerui" "\0"
+            VALUE "InternalName", "servermanager" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2021 de.mabenan. All rights reserved." "\0"
-            VALUE "OriginalFilename", "servermanagerui.exe" "\0"
-            VALUE "ProductName", "servermanagerui" "\0"
+            VALUE "OriginalFilename", "servermanager.exe" "\0"
+            VALUE "ProductName", "servermanager" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
-import 'package:servermanagerui/globals.dart';
+import 'package:servermanager/globals.dart';
 
 class LoginWidget extends StatefulWidget {
   final Function loginCB;

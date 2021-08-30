@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(servermanagerui LANGUAGES CXX)
+project(servermanager LANGUAGES CXX)
 
-set(BINARY_NAME "servermanagerui")
+set(BINARY_NAME "servermanager")
 
 cmake_policy(SET CMP0063 NEW)
 

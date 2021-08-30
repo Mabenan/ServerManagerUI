@@ -1,4 +1,4 @@
-package de.mabenan.servermanagerui
+package de.mabenan.servermanager
 
 import io.flutter.embedding.android.FlutterActivity
 

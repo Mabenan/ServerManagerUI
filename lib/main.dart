@@ -1,13 +1,16 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
-import 'package:servermanagerui/SubServer.dart';
-import 'package:servermanagerui/globals.dart';
-import 'package:servermanagerui/server_chooser.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:servermanager/SubServer.dart';
+import 'package:servermanager/globals.dart';
+import 'package:servermanager/server_chooser.dart';
 import 'package:parse_server_sdk/parse_server_sdk.dart' as sdk;
-import 'package:servermanagerui/servers.dart';
+import 'package:servermanager/servers.dart';
+import 'package:path/path.dart' as path;
 
 import 'dashboard.dart';
 import 'login.dart';
@@ -50,7 +53,20 @@ class HomeScreen extends StatefulWidget {
         registeredSubClassMap: {  'Server': () => SubServer(), },
         coreStore: kIsWeb
             ? await CoreStoreSharedPrefsImp.getInstance()
-            : await sdk.CoreStoreSembastImp.getInstance(apiServer!.host));
+            : await sdk.CoreStoreSembastImp.getInstance(await dbDirectory(apiServer!.host)));
+  }
+
+  static Future<String> dbDirectory(String dbName) async {
+    String dbDirectory = '';
+    if (!sdk.parseIsWeb &&
+        (Platform.isIOS ||
+            Platform.isAndroid ||
+            Platform.isMacOS ||
+            Platform.isLinux ||
+            Platform.isWindows)) {
+      dbDirectory = (await getApplicationDocumentsDirectory()).path;
+    }
+    return path.join('$dbDirectory/parse', dbName + '.db');
   }
 
   @override

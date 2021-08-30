@@ -1,4 +1,4 @@
-# servermanagerui
+# servermanager
 
 A new Flutter project.
 

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.mabenan.servermanagerui">
+    package="de.mabenan.servermanager">
    <application
-        android:label="servermanagerui"
+        android:label="Server Manager"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

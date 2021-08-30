@@ -1,0 +1,11 @@
+Categories:
+  - Multimedia
+License: BSD-2-Clause
+
+SourceCode: https://github.com/Mabenan/AudiobookClient
+
+Summary: Listen to the Audiobooks you own
+Description: |-
+  This is the Audiobook app which is mapped to audiobook.mabenan.de
+RepoType: git
+Repo: https://github.com/Mabenan/AudiobookClient
