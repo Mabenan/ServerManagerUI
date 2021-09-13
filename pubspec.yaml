@@ -30,7 +30,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   parse_server_sdk_flutter: ^3.1.0
   rxdart: ^0.27.1
-  charts_flutter: ^0.11.0
+  charts_flutter:
+    git:
+      url: git://github.com/google/charts.git
+      path: charts_flutter
   path_provider: ^2.0.2
 
 dev_dependencies:
